@@ -1,0 +1,22 @@
+net: "prototxt/main_32r-2-64r-2-64r-2-128r-2-128r-2-256r-2-1024rd0.5-1024rd0.5_DLR.prototxt"
+
+test_iter: 100
+test_interval: 100
+
+# The base learning rate, momentum and the weight decay of the network.
+weight_decay: 0.0000
+
+# The learning rate policy
+base_lr: 0.0001
+lr_policy: "fixed"
+solver_type: ADADELTA
+
+display: 1
+
+max_iter: 800000
+
+snapshot: 3000
+snapshot_prefix: "models/main_32r-2-64r-2-64r-2-128r-2-128r-2-256r-2-1024rd0.5-1024rd0.5_DLR_150K_adadelta0.0001"
+#log: "logs/main_32r-2-64r-2-64r-2-128r-2-128r-2-256r-2-1024rd0.5-1024rd0.5_DLR_150K_adadelta0.0001.txt"
+solver_mode: GPU
+
